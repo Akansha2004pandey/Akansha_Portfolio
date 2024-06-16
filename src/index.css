@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin:0;
+}
+.toggler{
+  display:none;
+}
+@media (max-width: 767px){
+  .education{
+    display:flex;
+    flex-direction: column;
+    
+  }
+  .long{
+    display: none;
+  }
+  .toggler{
+    display: inline;
+  }
+}
