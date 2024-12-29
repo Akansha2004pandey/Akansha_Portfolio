@@ -23,7 +23,7 @@ const Body = forwardRef((props,ref) => {
   }, []);
   return (
     <div id="home" ref={ref} className='flex w-full h-[500px]  items-center justify-center bg-gradient-to-r from-black  to-gray-900'>
-      <div className='text-white flex flex-col '>
+      <div className='text-white flex flex-col mx-auto pl-10 '>
          <div className='font-semibold text-4xl pb-3 flex'><div className='pr-4'>Hi, </div> <IoMdHand /></div>
          <div className='font-semibold text-5xl pb-3 text-white'>I am <span className='text-yellow-500'>Akansha Pandey</span></div>
          <div className='font-semibold text-3xl pb-3 text-gray-400' ref={el}>A Frontend Developer</div>
