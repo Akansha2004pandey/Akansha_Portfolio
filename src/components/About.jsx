@@ -10,7 +10,7 @@ const About = forwardRef((props, ref) => {
         <div className="font-bold text-center text-4xl py-20">
           <i>Education</i>
         </div>
-        <div className="flex flex-wrap justify-center education gap-10">
+        <div className="flex flex-wrap justify-center items-center education gap-10">
           {/* Khalsa Card */}
           <div className="card bg-base-100 shadow-xl mx-5 sm:w-96 w-3/4">
             <figure>
