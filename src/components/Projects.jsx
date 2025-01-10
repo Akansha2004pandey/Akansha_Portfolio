@@ -7,7 +7,7 @@ import image1 from "../images/icecream.webp";
 import image2 from "../images/money.webp";
 import image3 from "../images/Chatapp.png";
 import image4 from "../images/foodie.jpg";
-
+import image5 from "../images/image5.jpg";
 const Projects = forwardRef((props, ref) => {
   // Array of project data
   const projects = [
@@ -38,12 +38,19 @@ const Projects = forwardRef((props, ref) => {
       title: "Food Ordering App",
       description: "Developed a small food ordering UI using React. Created intuitive navigation, implemented add-to-cart and checkout functionalities, incorporated user accounts for login and order tracking, and ensured a responsive, visually appealing design.",
       githubLink: "https://github.com/Akansha2004pandey/foodie1",
+    },
+    {
+      id: 5,
+      image: image5,
+      title: "GenixAi Ai SaaS APP",
+      description: "Genix AI is a comprehensive AI-driven SaaS application built using Next.js, Prisma as ORM, and MongoDB as the database. It integrates cutting-edge AI technologies and services such as Gemini API , hugging face API , Eleven Labs API .",
+      githubLink: "https://github.com/Akansha2004pandey/genixAI",
     }
   ];
 
   return (
     <>
-      <div id="projects" ref={ref} className='font-bold text-3xl py-20 text-black text-center'>Projects</div>
+      <div id="projects" ref={ref} className='font-bold text-4xl py-20 text-gray-900 text-center'><i>Projects</i></div>
       <div className="flex flex-wrap justify-center">
         {/* Mapping through projects array */}
         {projects.map((project) => (

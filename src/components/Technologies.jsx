@@ -12,6 +12,8 @@ import image10 from "../images/redux.png";
 import image11 from "../images/daisyui.svg";
 import image12 from "../images/cplus.png";
 import image13 from "../images/git.png";
+import image14 from "../images/next.png";
+import image15 from "../images/firebase.png";
 import { GrTechnology } from "react-icons/gr";
 
 const Technologies = forwardRef((props, ref) => {
@@ -29,15 +31,20 @@ const Technologies = forwardRef((props, ref) => {
     { src: image11, alt: "DaisyUI" },
     { src: image9, alt: "PostgreSQL" },
     { src: image8, alt: "MongoDB" },
+    {src:image14,alt:"Next.js"},
+    {src:image15,alt:"Firebase"}
   ];
 
   return (
     <div ref={ref}>
-      <div className='text-3xl font-semibold text-white px-3 py-3 flex justify-center bg-gradient-to-r from-black to-gray-800'>
-        <div className='px-4'>Techstack</div> <GrTechnology />
+      <div className='bg-black h-4'>
+       
       </div>
+      <div className='text-center text-gray-900 font-bold text-4xl my-10 gap-3 flex justify-center items-center'>
+        <div><i>Techstack</i></div>
+         <GrTechnology /></div> 
 
-      <div className="flex py-8 flex-wrap justify-center gap-12 px-5">
+      <div className="flex py-8 flex-wrap justify-center gap-12 px-5 mt-10">
         {techImages.map((tech, index) => (
           <div key={index} className="flex flex-col items-center">
             <img

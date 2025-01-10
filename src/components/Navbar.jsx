@@ -27,28 +27,7 @@ const NavBar = ({ handleScrollToSection, homeref, aboutref, projectsref, contact
     <>
       <div className="flex justify-between items-center shadow-2xl p-8 bg-gradient-to-r from-black to-gray-900">
         <div className="font-bold text-2xl px-3 text-white">Akansha Pandey</div>
-        <ul className="flex px-3 items-center text-white hidden lg:flex">
-          <li className="px-3 font-semibold">
-            <a href="#" onClick={() => { handleScrollToSection(homeref); handleToggle(); }}>
-              Home
-            </a>
-          </li>
-          <li className="px-3 font-semibold">
-            <a href="#about" onClick={() => { handleScrollToSection(aboutref); handleToggle(); }}>
-              About
-            </a>
-          </li>
-          <li className="px-3 font-semibold">
-            <a href="#projects" onClick={() => { handleScrollToSection(projectsref); handleToggle(); }}>
-              Projects
-            </a>
-          </li>
-          <li className="px-3 font-semibold">
-            <a href="#contact" onClick={() => { handleScrollToSection(contactref); handleToggle(); }}>
-              Contact
-            </a>
-          </li>
-        </ul>
+        
         {/* Hamburger Menu Button for mobile */}
         <button onClick={handleToggle} className="lg:hidden text-2xl text-white z-50">
           <GiHamburgerMenu />
