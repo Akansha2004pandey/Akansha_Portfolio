@@ -8,6 +8,7 @@ import image2 from "../images/money.webp";
 import image3 from "../images/Chatapp.png";
 import image4 from "../images/foodie.jpg";
 import image5 from "../images/image5.jpg";
+import image6 from "../images/image6.png";
 const Projects = forwardRef((props, ref) => {
   // Array of project data
   const projects = [
@@ -45,6 +46,14 @@ const Projects = forwardRef((props, ref) => {
       title: "GenixAi Ai SaaS APP",
       description: "Genix AI is a comprehensive AI-driven SaaS application built using Next.js, Prisma as ORM, and MongoDB as the database. It integrates cutting-edge AI technologies and services such as Gemini API , hugging face API , Eleven Labs API .",
       githubLink: "https://github.com/Akansha2004pandey/genixAI",
+    },{
+      
+        id: 6,
+        image: image6,
+        title: "WhisperBox",
+        description: "Whisper Box is a web application that allows users to send anonymous messages to other users. Built with Next.js, ShadCN UI, and a combination of NextAuth for authentication and custom authentication for user sign-up, Whisper Box provides a seamless and secure messaging platform. The app also utilizes React Hook Form for managing form inputs.",
+        githubLink: "https://github.com/Akansha2004pandey/WhisperBox",
+      
     }
   ];
 
@@ -62,10 +71,10 @@ const Projects = forwardRef((props, ref) => {
             transition={{ delay: project.id * 0.1, duration: 0.5 }}
             whileHover={{ scale: 1.05, boxShadow: "0 15px 25px rgba(0, 0, 0, 0.1)" }}
           >
-            <img src={project.image} alt={project.title} className="w-[260px] h-[300px] rounded-lg mb-4" />
+            <img src={project.image} alt={project.title} className="sm:w-[360px] w-[260px] h-[400px] rounded-lg mb-4" />
             <div>
               <div className='font-semibold text-xl py-3'>{project.title}</div>
-              <div className='w-[260px] text-gray-700'>{project.description}</div>
+              <div className='sm:w-[360px] w-[260px]  text-gray-700'>{project.description}</div>
             </div>
             <a href={project.githubLink} className='mt-4 text-2xl text-gray-900 hover:text-gray-700'>
               <IoLogoGithub />
