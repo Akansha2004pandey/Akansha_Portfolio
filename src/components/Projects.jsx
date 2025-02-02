@@ -68,7 +68,7 @@ const Projects = forwardRef((props, ref) => {
             className='p-5 m-2 bg-[#d5fffe] flex flex-col justify-between rounded-lg shadow-lg'
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: project.id * 0.1, duration: 0.5 }}
+            transition={{ delay: project.id * 0.1, duration: 0.1 }}
             whileHover={{ scale: 1.05, boxShadow: "0 15px 25px rgba(0, 0, 0, 0.1)" }}
           >
             <img src={project.image} alt={project.title} className="sm:w-[360px] w-[260px] h-[400px] rounded-lg mb-4" />
